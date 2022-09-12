@@ -1,7 +1,7 @@
 first = float(input("First: "))
 second = float(input("Second: "))
-third = float(input("Third:"))
-fourth = float(input("Fourth:"))
+third = float(input("Third: "))
+fourth = float(input("Fourth: "))
 
 sum = first + second + third + fourth
 average = (first + second + third + fourth) / 4
