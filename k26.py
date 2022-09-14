@@ -19,6 +19,7 @@ def main():
     turn_left()
     turn_left()
     move()
+    put_beeper()
     move()
     turn_left()
     turn_left()
@@ -32,6 +33,7 @@ def main():
     turn_left()
     move()
     move()
+    turn_left()
     pass
 
 
