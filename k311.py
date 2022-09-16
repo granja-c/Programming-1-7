@@ -130,14 +130,14 @@ class ktools:
         self.l()
 
     def m3(self):
-      kt.m()
-      kt.m()
-      kt.m()
+      self.m()
+      self.m()
+      self.m()
 
 def main():
     """ Karel code goes here! """
     kt = ktools()
-
+    kt.tl()
     pass
 
 
