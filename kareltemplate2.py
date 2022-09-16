@@ -32,7 +32,7 @@ class ktools:
     self.m()
     self.put()
 
-  def pick5(self):
+  def put5(self):
     self.put2()
     self.m()
     self.put2()
@@ -62,10 +62,61 @@ class ktools:
     self.m()
     self.m()
     self.m()
+    self.m()
+
+  def e(self):
+    """Print E w beepers"""
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.tr()
+    self.m()
+    self.m()
+    self.tr()
+    self.put2()
+    self.tl()
+    self.m()
+    self.m()
+    self.tl()
+    self.put2()
+
+  def l(self):
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.tr()
+    self.m()
+    self.m()
+    self.m()
+    self.m()
+    self.tr()
+    self.put2()
+
+  def o(self):
+    self.tl()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.m()
+    self.tr()
+    self.put5()
+    self.tr()
+    self.m()
+    self.put2()
+    self.ta()
+    self.m()
+    self.m()
     
-  def main():
+
+  
+    
+def main():
     """ Karel code goes here! """
-    
+    kt = ktools()
     pass
 
 
