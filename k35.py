@@ -121,8 +121,7 @@ class ktools:
         self.ta()
         self.m()
         self.m()
-        self.m()
-        self.m()
+        
 
     def doubleL(self):
         """Print 2 L's with beepers"""
@@ -133,6 +132,11 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.m()
+    kt.tr()
     kt.h()
     kt.e()
     kt.doubleL()
