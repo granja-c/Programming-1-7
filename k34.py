@@ -57,7 +57,8 @@ def main():
     move()
     move()
     move()
-    pick_beeper()   #
+    pick_beeper()    #
+    turn_left()
     move()
     move()
     pick_beeper()
