@@ -7,10 +7,11 @@ class ktools:
       """Move"""
       move()
 
+
     def tl(self):
-      """Turn left"""
       turn_left()
 
+      
     def tr(self):
       """Turn right"""
       self.tl()
@@ -241,7 +242,16 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-
+    move()
+    kt.tl()
+    move() 
+    kt.tr()
+    kt.c()
+    kt.a()
+    kt.M()
+    kt.i()
+    kt.l()
+    kt.a()
     pass
 
 
