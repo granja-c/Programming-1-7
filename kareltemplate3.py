@@ -237,7 +237,52 @@ class ktools:
         self.m()
         self.m()
 
+    def fic(self) -> bool:
+        return front_is_clear()
 
+    def fib(self) -> bool:
+        return not self.fic()
+
+    def ric(self) -> bool:
+        self.tr()
+        if self.fic():
+            self.tl()
+            return True
+        self.tl()
+        return False
+
+    def rib(self) -> bool:
+        return not self.ric()
+
+    def mazemove(self):
+        if self.fib():
+            self.tl()
+        else:
+            self.m()
+            if self.ric():
+                self.tr()
+                self.m()
+                if self.ric():
+                    self.tr()
+                    self.m()
+        pass
+
+    def zero(self):
+      self.tl()
+      self.put5()
+      self.tr()
+      self.m()
+      self.put()
+      self.m()
+      self.tr()
+      self.put5()
+      self.tr()
+      self.m()
+      self.put()
+      self.ta()
+      self.m()
+      self.m()
+      self.m()
 
 def main():
     """ Karel code goes here! """
