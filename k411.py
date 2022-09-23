@@ -280,26 +280,16 @@ class ktools:
         pass
       
     def carpet1(self):
-        if (self.rib() and self.fib() and self.lib()):
+        if (self.fib() and self.lib() and self.rib()):
           self.put()
           self.ta()
           self.m()
           self.tl()
-        self.ta()
-        self.m()
-        self.tl()
-      
-    def carpet2(self):
-        if (self.fic() and self.lib() and self.rib()):
-          while (self.fic() and self.lib() and self.rib()):
-            self.m()
-            if self.fib():
-              self.ta()
-              while (self.lib() and self.rib()):
-                self.put()
-                self.m()
-
-              
+        else:
+          self.ta()
+          self.m()
+          self.tl()
+          
     def zero(self):
       self.tl()
       self.put5()
@@ -358,7 +348,37 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet1()
+    kt.m()
+   
     pass
 
 

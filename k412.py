@@ -266,6 +266,7 @@ class ktools:
     def lib(self) -> bool:
         return not self.lic()
 
+ 
     def mazemove(self):
         if self.fib():
             self.tl()
@@ -288,7 +289,7 @@ class ktools:
         self.ta()
         self.m()
         self.tl()
-      
+
     def carpet2(self):
         if (self.fic() and self.lib() and self.rib()):
           while (self.fic() and self.lib() and self.rib()):
@@ -298,8 +299,14 @@ class ktools:
               while (self.lib() and self.rib()):
                 self.put()
                 self.m()
+              self.tl()
+            else:
+              self.ta()
+              while self.fic():
+                self.m()
+              self.tl()
 
-              
+      
     def zero(self):
       self.tl()
       self.put5()
@@ -358,7 +365,36 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    kt.m()
+    kt.m()
+    kt.tl()
+    kt.m()
+    kt.carpet2()
+    kt.m()     #2ndrm
+    kt.tl()
+    kt.m()
+    kt.carpet2()
+    kt.m()     #3rdrm
+    kt.tl()
+    kt.m()
+    kt.carpet2()  
+    kt.m()      #4th
+    kt.tl()
+    kt.m()
+    kt.carpet2()  
+    kt.m()      #5th
+    kt.tl()
+    kt.m()
+    kt.carpet2()  
+    kt.m()      #6th
+    kt.tl()
+    kt.m()
+    kt.carpet2()  
+    kt.m()      #7th
+    kt.tl()
+    kt.m()
+    kt.carpet2() 
+    
     pass
 
 
