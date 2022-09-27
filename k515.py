@@ -298,27 +298,7 @@ class ktools:
               while (self.lib() and self.rib()):
                 self.put()
                 self.m()
-  
-    def pick55(self):
-      i = 0 
-      while beepers_present():
-         self.pick()
-         if no_beepers_present() and self.fic():
-           move()
-           if no_beepers_present():
-             i += 1
-             if i <= 3:
-               self.ta()
-               self.m()
-               self.tr()
-               self.m()
-             elif i == 4:
-               pass
-         elif no_beepers_present() and self.fib():
-           self.tl()
-           pass
-    
-          
+
               
     def zero(self):
       self.tl()
@@ -355,7 +335,7 @@ class ktools:
         self.pick()
         self.m()
       self.pick()
-  
+    
     def zero(self):
       self.tl()
       self.put5()
@@ -371,18 +351,54 @@ class ktools:
       self.ta()
       self.m()
       self.m()
-      self.m()   
+      self.m()
 
+    def onbeep(self):
+      return beepers_present()
+
+    def jump(self):
+      """Jump for 510"""
+      while self.fic():
+        self.m()
+      self.tl()
+      while self.rib():
+        self.m()
+      self.tr()
+      self.m()
+      self.tr()
+      while self.fic():
+        self.m()
+      self.tl()
+
+    def find(self):
+      """for 515"""
+      while not facing_north():
+        self.tl()
+      self.m()
+      if not self.onbeep():
+        self.tl()
+        self.m()
+        self.tl()
+        self.m()
+      for _ in range(2):
+        if not self.onbeep():
+          self.m()
+          self.tl()
+          self.m()
+          self.tl()
+      pass  
+        
 def main():
     """ Karel code goes here! """
     kt = ktools()
-    move()
-    move()
+    kt.m()
     kt.tl()
     kt.m()
     kt.tr()
-    kt.pick55() 
-    kt.tl()
+    kt.m()
+    while kt.onbeep():
+      kt.pick()
+      kt.find()
     pass
 
 
