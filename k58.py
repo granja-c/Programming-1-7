@@ -485,7 +485,11 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    kt.mm(4)
+    kt.tl()
+    kt.mm(4)
+    kt.tr()
+    kt.put58()
     pass
 
 

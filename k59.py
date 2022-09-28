@@ -341,38 +341,7 @@ class ktools:
                 self.put()
                 self.m()
 
-    def put58(self):
-      t = 0
-      while t >= 3:
-        while self.fic() and self.lib():
-          self.put()
-          self.m()
-          if self.lic():
-            self.tr()
-            self.put()
-            self.m()
-            self.tr()
-            self.put()
-            self.m()
-          elif self.fib():
-            self.tr()
-            t += 1
-      if t = 4:
-        self.put()
-        
-
-    def put59(self):
-      t = 0
-      while t > 4:
-        while self.fic():
-          self.put()
-          self.m()
-          if self.fib():
-            self.tr()
-            t += 1
-      if t == 4: 
-        self.put()
- 
+              
     def zero(self):
       self.tl()
       self.put5()
@@ -425,7 +394,39 @@ class ktools:
       self.m()
       self.m()
       self.m()
+      
+    def pick55(self):
+      i = 0 
+      while beepers_present():
+         self.pick()
+         if no_beepers_present() and self.fic():
+           move()
+           if no_beepers_present():
+             i += 1
+             if i <= 3:
+               self.ta()
+               self.m()
+               self.tr()
+               self.m()
+             elif i == 4:
+               pass
+         elif no_beepers_present() and self.fib():
+           self.tl()
+           pass
 
+    def put59(self):
+      """For k59"""
+      t = 0
+      while t > 4:
+        while self.fic():
+          self.put()
+          self.m()
+          if self.fib():
+            self.tr()
+            t += 1
+      if t == 4: 
+        self.put()
+ 
     def onbeep(self):
       return beepers_present()
 
@@ -485,7 +486,11 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    kt.tl()
+    kt.mm(5)
+    kt.tr()
+    kt.m()
+    kt.put59()
     pass
 
 

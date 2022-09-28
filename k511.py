@@ -278,49 +278,7 @@ class ktools:
                     self.tr()
                     self.m()
         pass
-
-    def mazemove2(self):
-      if not onbeeper():
-        while self.rib() and self.fic():
-          self.m()
-          while self.fib():
-            self.tl()
-            if self.ric():
-              self.tr()
-              self.m()
-              if self.ric():
-                self.tr()
-                self.m()
-      else:
-        self.pick()
-
-    def treasurehunt(self):
-      i = 0
-      while i != 5:
-        while not self.onbeep():
-          self.m()
-        while self.onbeep():
-          self.pick()
-          i += 1
-        if i == 1:
-          while not facing_north():
-            self.tl()
-          i == 0
-        elif i == 2:
-          while not facing_west():
-            self.tl()
-          i == 0
-        elif i == 3:
-          while not facing_south():
-            self.tl()
-          i == 0
-        elif i == 4:
-          while not facing_east():
-            self.tl()
-          i == 0
-
-
-  
+      
     def carpet1(self):
         if (self.rib() and self.fib() and self.lib()):
           self.put()
@@ -341,38 +299,7 @@ class ktools:
                 self.put()
                 self.m()
 
-    def put58(self):
-      t = 0
-      while t >= 3:
-        while self.fic() and self.lib():
-          self.put()
-          self.m()
-          if self.lic():
-            self.tr()
-            self.put()
-            self.m()
-            self.tr()
-            self.put()
-            self.m()
-          elif self.fib():
-            self.tr()
-            t += 1
-      if t = 4:
-        self.put()
-        
-
-    def put59(self):
-      t = 0
-      while t > 4:
-        while self.fic():
-          self.put()
-          self.m()
-          if self.fib():
-            self.tr()
-            t += 1
-      if t == 4: 
-        self.put()
- 
+              
     def zero(self):
       self.tl()
       self.put5()
@@ -463,7 +390,6 @@ class ktools:
       while self.rib() and self.fic():
         self.m()
       self.tl()
-
       
     def find(self):
       """for 515"""
@@ -485,7 +411,10 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    while not kt.onbeep():
+       kt.jump2()
+    if kt.onbeep():
+      kt.pick()
     pass
 
 

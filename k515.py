@@ -385,7 +385,6 @@ class ktools:
           self.m()
           self.tl()
           self.m()
-          self.tl()
       pass  
         
 def main():

@@ -341,38 +341,7 @@ class ktools:
                 self.put()
                 self.m()
 
-    def put58(self):
-      t = 0
-      while t >= 3:
-        while self.fic() and self.lib():
-          self.put()
-          self.m()
-          if self.lic():
-            self.tr()
-            self.put()
-            self.m()
-            self.tr()
-            self.put()
-            self.m()
-          elif self.fib():
-            self.tr()
-            t += 1
-      if t = 4:
-        self.put()
-        
-
-    def put59(self):
-      t = 0
-      while t > 4:
-        while self.fic():
-          self.put()
-          self.m()
-          if self.fib():
-            self.tr()
-            t += 1
-      if t == 4: 
-        self.put()
- 
+              
     def zero(self):
       self.tl()
       self.put5()
@@ -485,7 +454,22 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
-  
+    kt.mm(4)
+    kt.tl()
+    kt.mm(4)
+    b = 0
+    while onbeep():
+      kt.pick()
+      b += 1
+    if (b % 2) == 0:
+      kt.tr()
+      kt.m()
+    else:
+      kt.tl()
+      kt.m()
+    while onbeep():
+      kt.pick()
+      
     pass
 
 
