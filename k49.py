@@ -256,15 +256,15 @@ class ktools:
 
     def mazemove(self):
         if self.fib():
-            self.tl()
+          self.tl()
         else:
+          self.m()
+          if self.ric():
+            self.tr()
             self.m()
             if self.ric():
-                self.tr()
-                self.m()
-                if self.ric():
-                    self.tr()
-                    self.m()
+              self.tr()
+              self.m()
         pass
 
 

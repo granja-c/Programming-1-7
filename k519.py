@@ -459,26 +459,26 @@ def main():
     kt.m()
     i = 0
     while i != 5:
-       while not self.onbeep():
-        self.m()
-       while self.onbeep():
-         self.pick()
-         i += 1
+      while not kt.onbeep():
+        kt.m()
+      while kt.onbeep():
+        kt.pick()
+        i += 1
       if i == 1:
         while not facing_north():
-          self.tl()
-         i == 0
+          kt.tl()
+        i == 0
       elif i == 2:
-         while not facing_west():
-          self.tl()
+        while not facing_west():
+          kt.tl()
         i == 0
       elif i == 3:
         while not facing_south():
-          self.tl()
+          kt.tl()
         i == 0
       elif i == 4:
         while not facing_east():
-          self.tl
+          kt.tl
         i = 0
       elif i == 5:
         pass

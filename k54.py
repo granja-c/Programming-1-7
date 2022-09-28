@@ -454,11 +454,12 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
+    b = 0
+  
     kt.mm(4)
     kt.tl()
     kt.mm(4)
-    b = 0
-    while onbeep():
+    while kt.onbeep():
       kt.pick()
       b += 1
     if (b % 2) == 0:
@@ -467,7 +468,7 @@ def main():
     else:
       kt.tl()
       kt.m()
-    while onbeep():
+    while kt.onbeep():
       kt.pick()
       
     pass
