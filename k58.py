@@ -357,7 +357,7 @@ class ktools:
           elif self.fib():
             self.tr()
             t += 1
-      if t = 4:
+      if t == 4:
         self.put()
         
 
@@ -485,11 +485,28 @@ class ktools:
 def main():
     """ Karel code goes here! """
     kt = ktools()
+  
+    t = 0
+  
     kt.mm(4)
     kt.tl()
     kt.mm(4)
-    kt.tr()
-    kt.put58()
+    kt.ta()
+    while t <= 3:
+      while kt.fic() and kt.lib():
+        kt.put()
+        kt.m()  
+        if kt.lic():
+          kt.tr()
+          kt.put()
+          kt.m()
+          kt.tr()
+          kt.put()
+          kt.m()
+
+          t += 1
+    if t == 4:
+      kt.put()
     pass
 
 

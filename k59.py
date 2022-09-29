@@ -490,7 +490,14 @@ def main():
     kt.mm(5)
     kt.tr()
     kt.m()
-    kt.put59()
+
+
+    while kt.fic() and not kt.onbeep():
+      kt.put()
+      kt.m()
+      if kt.fib():
+         kt.tr()
+
     pass
 
 

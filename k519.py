@@ -304,7 +304,7 @@ class ktools:
           i += 1
         if i == 1:
           while not facing_north():
-            self.tl()
+           self.tl()
           i == 0
         elif i == 2:
           while not facing_west():
@@ -458,7 +458,7 @@ def main():
     kt.tl()
     kt.m()
     i = 0
-    while i != 5:
+    while i < 5:
       while not kt.onbeep():
         kt.m()
       while kt.onbeep():
@@ -467,21 +467,21 @@ def main():
       if i == 1:
         while not facing_north():
           kt.tl()
-        i == 0
+        i = 1
       elif i == 2:
         while not facing_west():
           kt.tl()
-        i == 0
+        i -= 2
       elif i == 3:
         while not facing_south():
           kt.tl()
-        i == 0
+        i = 3
       elif i == 4:
         while not facing_east():
           kt.tl
         i = 0
-      elif i == 5:
-        pass
+    if i == 5:
+      pass
 
     pass
 
