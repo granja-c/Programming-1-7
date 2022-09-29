@@ -467,15 +467,15 @@ def main():
       if i == 1:
         while not facing_north():
           kt.tl()
-        i = 1
+        i = 0
       elif i == 2:
         while not facing_west():
           kt.tl()
-        i -= 2
+        i = 0
       elif i == 3:
         while not facing_south():
           kt.tl()
-        i = 3
+        i = 0
       elif i == 4:
         while not facing_east():
           kt.tl
