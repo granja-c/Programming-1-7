@@ -8,3 +8,10 @@ for letter in text:
     numwords += 1
   print(letter)
 print("The number of words is: ", numwords + 1)
+
+def main():
+  text = "cool beans"
+  print("In main: " + text)
+
+main()
+print("After main: " + text)
